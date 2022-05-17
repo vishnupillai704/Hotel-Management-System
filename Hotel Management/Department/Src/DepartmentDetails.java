@@ -1,10 +1,18 @@
 package com.example.DepartmentMicroservice;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="DepartmentDetails")
 public class DepartmentDetails {
+	@Transient
+	 public static final String SEQUENCE_NAME = "user_sequence";
+	
+	
+	public static String getSequenceName() {
+		return SEQUENCE_NAME;
+	}
 	@Id
 	private Integer id;
 	private String departmentName;
