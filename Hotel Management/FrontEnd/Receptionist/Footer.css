@@ -1,0 +1,46 @@
+.footer{
+    border: 5px solid black;
+    margin:10px;
+    padding: 40px;
+    background-color: gray;
+}
+.HeadingHotel{
+    position: relative;
+    font-family:'Pacifico', cursive; 
+    bottom:40px;
+    left:450px;
+}
+.Legal{
+    position: relative;
+    font-family:'Pacifico', cursive; 
+    top:40px;
+    right:69px;
+}
+.Privacy{
+    position: relative;
+    font-family:'Pacifico', cursive; 
+    top:40px;
+    right: 40px;
+}
+.Copyright{
+    position: relative;
+    font-family:'Pacifico', cursive; 
+    left:195px;
+
+}
+.CustomerCareEmail{
+    position: relative;
+    font-family:'Pacifico', cursive;
+    bottom: 40px;
+    left:180px;
+}
+.Care{
+    position: relative;
+    font-family:'Pacifico', cursive;
+}
+.FooterLogo{
+    position: relative;
+    border: 5px solid black;
+    bottom: 30px;
+    right:950px;
+}

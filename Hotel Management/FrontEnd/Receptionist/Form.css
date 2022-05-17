@@ -1,0 +1,102 @@
+.Addcustomer{
+    border: 5px solid black;
+    text-align: center;
+    margin: 50px;
+    width: 500px;
+    position: relative;
+    top:60px;
+}
+.UpdateCustomer{
+    border: 5px solid black;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    left:670px;
+    bottom: 678px;
+    height: 260px;
+}
+.Id{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.Name{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.Adults{
+    font-family:'Pacifico', cursive;
+    margin: 20px;   
+}
+.Status{
+    font-family:'Pacifico', cursive;
+    margin: 20px;  
+}
+.Noofnights{
+    font-family:'Pacifico', cursive;
+    margin: 20px;    
+}
+.Email{
+    font-family:'Pacifico', cursive;
+    margin: 20px;    
+}
+.phonenumber{
+    font-family:'Pacifico', cursive;
+    margin: 20px;     
+}
+.Gender{
+    font-family:'Pacifico', cursive;
+    margin: 20px;    
+}
+.Address{
+    font-family:'Pacifico', cursive;
+    margin: 20px;  
+}
+.Checkin{
+    font-family:'Pacifico', cursive;
+    margin: 20px;  
+}
+.Checkout{
+    font-family:'Pacifico', cursive;
+    margin: 20px;     
+}
+.RoomRate{
+       font-family:'Pacifico', cursive;
+    margin: 20px;   
+}
+
+.Delete{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    left: 320px;
+}
+
+.delete{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    left:930px;
+    bottom: 700px;
+}
+.updatedDetails{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    left:790px;
+    bottom: 670px;
+}
+.saveDetails{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    top: 30px;
+    left:198px;
+}
+.UpdateGuest{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    left:750px;
+    top:50px;
+}
+.AddGuest{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    left:100px;
+    top:99px;  
+}

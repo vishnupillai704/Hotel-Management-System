@@ -1,0 +1,15 @@
+.text-center{
+    font-family:'Pacifico', cursive;
+}
+.ListOfCustomer{
+    position: relative;
+    right: 40px;
+}
+.row{
+    position: relative;
+    top: 25px;
+}
+.checkout{
+    position: relative;
+    top:30px;
+}

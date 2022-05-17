@@ -1,0 +1,120 @@
+.delux1{
+    border: 5px solid black;
+    margin: 30px;
+}
+.delux2{
+    border: 5px solid black;
+    margin: 30px
+}
+.delux3{
+    border: 5px solid black;
+    margin: 30px 
+}
+.delux4{
+    border: 5px solid black;
+    margin: 30px 
+}
+.delux5{
+    border: 5px solid black;
+    margin: 30px 
+}
+.delux6{
+    border: 5px solid black;
+    margin: 30px  
+}
+.suite1{
+    border: 5px solid black;
+    margin:30px;
+}
+.suite2{
+    border: 5px solid black;
+    margin:30px; 
+}
+.suite3{
+    border: 5px solid black;
+    margin:30px; 
+}
+.suite4{
+    border: 5px solid black;
+    margin:30px;  
+}
+.suite5{
+    border: 5px solid black;
+    margin:30px;
+}
+.suite6{
+    border: 5px solid black;
+    margin:30px;
+}
+.deluxh1{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    bottom: 800px;
+    left:115px;
+}
+.deluxh2{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    bottom: 800px;
+    left:385px;
+}
+.deluxh3{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    bottom: 800px;
+    left:654px;
+}
+.deluxh4{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    bottom: 540px;
+    right:187px;
+}
+.deluxh5{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    bottom: 540px;
+    left:77px;
+}
+.deluxh6{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    bottom: 540px;
+    left:360px;
+}
+.suiteh1{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    bottom: 285px;
+    right:490px;
+}
+.suiteh2{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    bottom: 285px;
+    right: 225px;
+}
+.suiteh3{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    bottom: 285px;
+    left:60px;
+}
+.suiteh4{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    right:790px;
+    bottom:20px;
+}
+.suiteh5{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    right:520px;
+    bottom: 20px;
+}
+.suiteh6{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    left:850px;
+    bottom: 43px;
+}

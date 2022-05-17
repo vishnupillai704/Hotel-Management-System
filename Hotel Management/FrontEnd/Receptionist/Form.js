@@ -52,6 +52,8 @@ const UpdateDelete=(e)=>{
 
   return(
   <div className="container"> 
+           <div><h1 className="AddGuest"> Add Guest</h1>
+           <h1 className="UpdateGuest"> Update Guest</h1></div>
           <form className="Addcustomer"> 
             
             <div className="Name"> <label>Name :</label> 
