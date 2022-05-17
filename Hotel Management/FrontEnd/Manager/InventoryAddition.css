@@ -1,0 +1,97 @@
+.container{
+    text-align: center;
+    border: 5px solid black;
+    width: 300px;
+    position: relative;
+    top:20px;
+}
+.EmployeeActions{
+position: relative;
+bottom: 8px;
+}
+.id{
+    font-family:'Pacifico', cursive;
+    margin: 20px;  
+}
+.employeeName{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.employeeAddress{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.employeeSalary{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.employeeAge{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.occupation{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.employeeEmail{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.saveEmployee{
+    position: relative;
+    right: 275px;
+}
+.UpdateEmployee{
+    position: relative;
+    bottom: 24px;
+}
+.DeleteEmployee{
+    position: relative;
+    left: 283px;
+    bottom: 53px;
+}
+.iD{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.day{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.foods{
+    font-family:'Pacifico', cursive;
+    margin: 20px; 
+}
+.drinks{
+    font-family:'Pacifico', cursive;
+    margin: 20px; 
+}
+.linen{
+    font-family:'Pacifico', cursive;
+    margin: 20px; 
+} 
+.cleaningProducts{
+    font-family:'Pacifico', cursive;
+    margin: 20px; 
+}
+.totalcost{
+    font-family:'Pacifico', cursive;
+    margin: 20px;  
+}
+.InventoryActions{
+    position: relative;
+    bottom: 5px;
+}
+.saveInventory{
+    position: relative;
+    right: 275px;
+}
+.UpdateInventory{
+    position: relative;
+    bottom: 24px;
+}
+.DeleteInventory{
+    position: relative;
+    left:283px;
+    bottom:50px;
+}

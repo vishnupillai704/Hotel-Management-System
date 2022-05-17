@@ -1,5 +1,5 @@
 import React,{useState} from "react";                                                              
-
+import './RoomAddition.css'
 import {useNavigate} from "react-router-dom";
 import RoomService from "../services/RoomService";
 function RoomAddition(){
@@ -32,10 +32,10 @@ function RoomAddition(){
       }
 
     return(
-        <div className="container"> 
+        <div className="container1"> 
                 <form>
-                <div className="Id"> <label>id :</label> 
-            <input type='number' value={id} onChange={e=>setID(e.target.value)}/></div>
+                <div className="Id"> <label>Id :</label> 
+            <input type='number' value={id} placeholder="Only For Update" onChange={e=>setID(e.target.value)}/></div>
             
             <div className="RoomNo"> <label>Room No :</label> 
             <input type='number' value={roomNo} onChange={e=>setroomNo(e.target.value)}/></div>
@@ -51,12 +51,12 @@ function RoomAddition(){
                     
             <div className="RoomRate"> <label>Room Rate :</label> 
             <input type='number' value={roomRate} onChange={e=>setroomRate(e.target.value)}/></div>
-
-            <div className="save"> <button onClick={save} >Save</button></div>
-            <div className="Update"> <button onClick={Update} >Update</button></div>
-            <div className="Delete"> <button onClick={Delete} >Delete</button></div>
-
                     </form>
+                   <main className="Action">
+            <div  className="saveRoom"> <button onClick={save} >Save</button></div>
+            <div className="UpdateRoom"> <button onClick={Update} >Update</button></div>
+            <div className="DeleteRoom"> <button onClick={Delete} >Delete</button></div>
+            </main>
                     </div>)
 }
 export default RoomAddition;

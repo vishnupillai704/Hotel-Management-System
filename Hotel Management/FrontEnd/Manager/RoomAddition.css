@@ -1,0 +1,54 @@
+.container1{
+    text-align: center;
+    border: 5px solid black;
+    width: 480px;
+    height: 340px;
+    position: relative;
+    top:50px;
+    left: 370px;
+}
+
+.Id{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.RoomNo{
+    font-family:'Pacifico', cursive;
+    margin: 20px; 
+}
+.RoomType{
+    font-family:'Pacifico', cursive;
+    margin: 20px; 
+}
+.FloorNo{
+    font-family:'Pacifico', cursive;
+    margin: 20px; 
+}
+.NoOFbeds{
+    font-family:'Pacifico', cursive;
+    margin: 20px;   
+}
+.RoomRate{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.Action{
+    position: relative;
+    top:20px;
+}
+.saveRoom{
+    position: relative;
+    right:265px;
+    bottom: 40px;
+
+}
+.DeleteRoom{
+    position: relative;
+    left:272px;
+    bottom: 96px;
+    
+}
+.UpdateRoom{
+    position: relative;
+    bottom: 34px;
+}

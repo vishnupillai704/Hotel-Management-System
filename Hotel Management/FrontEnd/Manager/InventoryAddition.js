@@ -1,5 +1,5 @@
 import React,{useState} from "react";                                                              
-
+import './InventoryAddition.css'
 import {useNavigate} from "react-router-dom";
 import InventoryService from "../services/InventoryService";
 
@@ -65,7 +65,7 @@ function InventoryAddition(){
         <div className="container">
             <form>
              <div className="id" ><label>Id:</label>
-             <input type="number" value={id} onChange={(e)=>setid(e.target.value)} /></div>
+             <input type="number" placeholder="Only for Update" value={id} onChange={(e)=>setid(e.target.value)} /></div>
  
              <div className="employeeName" ><label>Employee Name :</label>
              <input type="text" value={employeeName} onChange={(e)=>setemployeeName(e.target.value)}/></div>
@@ -84,11 +84,12 @@ function InventoryAddition(){
 
              <div className="employeeEmail" ><label>Employee Email :</label>
              <input type="email" value={employeeEmail} onChange={e=>setemployeeEmail(e.target.value)}/></div>
-             
-             <div className="save"> <button onClick={save} >Save</button></div>
-             <div className="Update"> <button onClick={Update} >Update</button></div>
-             <div className="Delete"> <button onClick={Delete} >Delete</button></div>
             </form>
+            <main className="EmployeeActions">
+              <div className="saveEmployee"> <button onClick={save} >Save</button></div>
+              <div className="UpdateEmployee"> <button onClick={Update} >Update</button></div>
+              <div className="DeleteEmployee"> <button onClick={Delete} >Delete</button></div>
+             </main>
 
             <form>
             <div className="iD" ><label>Id:</label>
@@ -111,12 +112,14 @@ function InventoryAddition(){
              
              <div className="totalcost"><label>Total Cost :</label>
              <input type="number" value={totalCost} onChange={e=>settotalCost(e.target.value)}/></div>
-
-             
-             <div className="save"> <button onClick={saveInventory} >Save</button></div>
-             <div className="Update"> <button onClick={UpdateInventory} >Update</button></div>
-             <div className="Delete"> <button onClick={DeleteInventory} >Delete</button></div>
             </form>
+
+            <main className="InventoryActions">
+            <div className="saveInventory"> <button onClick={saveInventory} >Save</button></div>
+             <div className="UpdateInventory"> <button onClick={UpdateInventory} >Update</button></div>
+             <div className="DeleteInventory"> <button onClick={DeleteInventory} >Delete</button></div>
+
+            </main>
 
         </div>
     )
