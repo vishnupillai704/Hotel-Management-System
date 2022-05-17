@@ -1,97 +1,62 @@
 package com.example.GuestManagementMicroservice;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection="CustomerUpdate")
 public class CustomerUpdate {
+	@Transient
+	 public static final String SEQUENCE_NAME = "user_sequence";
+	
+	 public static String getSequenceName() {
+		return SEQUENCE_NAME;
+	}
+	
+	
 	@Id
-    private Integer id;
+    private Integer iD;
+	private String updatedname;
+    private String updatedstatus;
+    private String updatedcheckoutdate;
+    private Integer updatedroomrate; 
+    private Integer updatedroomNo;
 	
-	private String name;
-    private Integer adults;   
-    private String status;
-    private Integer numberOfnights;
-    private String email;
-    private Long phonenumber;
-    private String gender;
-    private String address;
-    private Integer checkindate;
-    private Integer checkoutdate;
-    private Integer roomrate; 
-	public Integer getRoomrate() {
-		return roomrate;
+	public Integer getiD() {
+		return iD;
 	}
-	public void setRoomrate(Integer roomrate) {
-		this.roomrate = roomrate;
+	public void setiD(Integer iD) {
+		this.iD = iD;
 	}
-	public Integer getCheckindate() {
-		return checkindate;
+	public String getUpdatedname() {
+		return updatedname;
 	}
-	public void setCheckindate(Integer checkindate) {
-		this.checkindate = checkindate;
+	public void setUpdatedname(String updatedname) {
+		this.updatedname = updatedname;
 	}
-	public Integer getCheckoutdate() {
-		return checkoutdate;
+	public String getUpdatedstatus() {
+		return updatedstatus;
 	}
-	public void setCheckoutdate(Integer checkoutdate) {
-		this.checkoutdate = checkoutdate;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	
-	public Long getPhonenumber() {
-		return phonenumber;
-	}
-	public void setPhonenumber(Long phonenumber) {
-		this.phonenumber = phonenumber;
-	}
-	public String getGender() {
-		return gender;
-	}
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
+	public void setUpdatedstatus(String updatedstatus) {
+		this.updatedstatus = updatedstatus;
 	}
 
-	public Integer getId() {
-		return id;
+	public String getUpdatedcheckoutdate() {
+		return updatedcheckoutdate;
 	}
-	public void setId(Integer id) {
-		this.id = id;
+	public void setUpdatedcheckoutdate(String updatedcheckoutdate) {
+		this.updatedcheckoutdate = updatedcheckoutdate;
 	}
-	public String getName() {
-		return name;
+	public Integer getUpdatedroomrate() {
+		return updatedroomrate;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setUpdatedroomrate(Integer updatedroomrate) {
+		this.updatedroomrate = updatedroomrate;
 	}
-	
-	public Integer getAdults() {
-		return adults;
+	public Integer getUpdatedroomNo() {
+		return updatedroomNo;
 	}
-	public void setAdults(Integer adults) {
-		this.adults = adults;
+	public void setUpdatedroomNo(Integer updatedroomNo) {
+		this.updatedroomNo = updatedroomNo;
 	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	public Integer getNumberOfnights() {
-		return numberOfnights;
-	}
-	public void setNumberOfnights(Integer numberOfnights) {
-		this.numberOfnights = numberOfnights;
-	}
-	
+    
 }
