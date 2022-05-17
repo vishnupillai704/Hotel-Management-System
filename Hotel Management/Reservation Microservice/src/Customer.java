@@ -1,10 +1,20 @@
 package com.example.practice.project.Controller;
 
-import java.util.Date;
+
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+
 @Document(collection="Customer")
 public class Customer {
+	
+	 @Transient
+	 public static final String SEQUENCE_NAME = "user_sequence";
+	
+	 public static String getSequenceName() {
+			return SEQUENCE_NAME;
+		}
 	@Id
     private Integer id;
 	
@@ -16,27 +26,39 @@ public class Customer {
     private Long phonenumber;
     private String gender;
     private String address;
-    private Integer checkindate;
-    private Integer checkoutdate;
+    private String checkindate;
+    private String checkoutdate;
     private Integer roomrate;
+    private Integer roomNo;
+    
+    public String getCheckindate() {
+		return checkindate;
+	}
+	public void setCheckindate(String checkindate) {
+		this.checkindate = checkindate;
+	}
+	public String getCheckoutdate() {
+		return checkoutdate;
+	}
+	public void setCheckoutdate(String checkoutdate) {
+		this.checkoutdate = checkoutdate;
+	}
+	
+	public Integer getRoomNo() {
+		return roomNo;
+	}
+	public void setRoomNo(Integer roomNo) {
+		this.roomNo = roomNo;
+	}
+
 	public Integer getRoomrate() {
 		return roomrate;
 	}
 	public void setRoomrate(Integer roomrate) {
 		this.roomrate = roomrate;
 	}
-	public Integer getCheckindate() {
-		return checkindate;
-	}
-	public void setCheckindate(Integer checkindate) {
-		this.checkindate = checkindate;
-	}
-	public Integer getCheckoutdate() {
-		return checkoutdate;
-	}
-	public void setCheckoutdate(Integer checkoutdate) {
-		this.checkoutdate = checkoutdate;
-	}
+	
+
 	public String getEmail() {
 		return email;
 	}
