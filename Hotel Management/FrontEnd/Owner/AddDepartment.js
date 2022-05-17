@@ -1,5 +1,5 @@
 import React,{useState} from "react";                                                              
-
+import './AddDepartment.css'
 import {useNavigate} from "react-router-dom";
 import DepartmentService from "../Services/DepartmentService";
 
@@ -45,12 +45,12 @@ function AddDepartment(){
              <div className="totalSalary" ><label>Total Salary:</label>
              <input type="number" value={totalSalary} onChange={(e)=>settotalSalary(e.target.value)} /></div>
 
-             <div className="save"> <button onClick={save} >Save</button></div>
-
-             <div className="Update"> <button onClick={Update} >Update</button></div>
-             
-             <div className="Delete"> <button onClick={Delete} >Delete</button></div>
             </form>
+            <main className="DepartmentActions">
+             <div className="saveDepartment"> <button onClick={save} >Save</button></div>
+             <div className="UpdateDepartment"> <button onClick={Update} >Update</button></div>
+             <div className="DeleteDepartment"> <button onClick={Delete} >Delete</button></div>
+            </main>
 
         </div>
     )

@@ -1,0 +1,42 @@
+.container{
+    border: 5px solid black;
+    position: relative;
+    top:80px;
+    width: 400px;
+    height: 300px;
+}
+.id{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.departmentName{
+    font-family:'Pacifico', cursive;
+    margin: 20px;
+}
+.totalEmployees{
+    font-family:'Pacifico', cursive;
+    margin: 20px; 
+}
+.totalSalary{
+    font-family:'Pacifico', cursive;
+    margin: 20px; 
+}
+.DepartmentActions{
+    position: relative;
+    top:20px;
+}
+.saveDepartment{
+position: relative;
+bottom: 5px;
+}
+.DeleteDepartment{
+    position: relative;
+    left:236px;
+    bottom: 107px;
+}
+.UpdateDepartment{
+    position: relative;
+    right:240px;
+    bottom: 77px;
+
+}

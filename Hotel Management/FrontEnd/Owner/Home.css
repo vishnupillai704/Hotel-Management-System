@@ -1,0 +1,18 @@
+.welcome{
+    font-family:'Pacifico', cursive;
+    font-size: 45px;
+    text-align: center;
+    color: blue;
+    position: relative;
+    top: 30px;
+    
+}
+.continue{
+    font-family:'Pacifico', cursive;
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+    top: 45px;
+    color: green;
+    
+}
