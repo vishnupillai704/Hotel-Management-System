@@ -11,13 +11,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+
 
 import io.swagger.annotations.ApiOperation;
 
 
 
-@CrossOrigin(origins ={"http://localhost:3000","http://localhost:3002"})
+@CrossOrigin(origins ={"http://localhost:3000","http://localhost:3002","http://localhost:3000/addCustomer"})
 @RestController
 @RequestMapping("/Booking")
 public class Controller {
@@ -25,6 +28,9 @@ public class Controller {
     private BookingRepository bookingrepository;     
 	@Autowired
 	private SequenceGeneratorService service;
+	@Autowired
+	RabbitMQSender rabbitMQSender;
+ 
 	
 	
 	@GetMapping("/all")
@@ -33,6 +39,20 @@ public class Controller {
 	 response=Customer.class)
 	public List<Customer>findAll(){
 		return bookingrepository.findAll();
+	}
+	
+	@GetMapping("/payment")
+	public String producer(@RequestParam("customerId") String customerId,@RequestParam("customerName") String customerName,@RequestParam("amount") String amount,@RequestParam("status") String status ) {
+		Customer ord=new Customer();
+		RabbitMqCustomer cus =new RabbitMqCustomer();
+		cus.setId(service.getSequenceNumber(ord.SEQUENCE_NAME));
+		cus.setCustomerId(customerId);
+		cus.setCustomerName(customerName);
+		cus.setAmount(amount);
+		cus.setStatus(status);
+		rabbitMQSender.send(cus);
+		return "Message sent to the RabbitMQ JavaInUse Successfully";
+		
 	}
 	
 	

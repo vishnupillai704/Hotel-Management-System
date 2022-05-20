@@ -31,7 +31,28 @@ public class Customer {
     private Integer roomrate;
     private Integer roomNo;
     
-    public String getCheckindate() {
+    public Customer() {
+    	
+    }
+    public Customer(Integer id, String name, Integer adults, String status, Integer numberOfnights, String email,
+			Long phonenumber, String gender, String address, String checkindate, String checkoutdate, Integer roomrate,
+			Integer roomNo) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.adults = adults;
+		this.status = status;
+		this.numberOfnights = numberOfnights;
+		this.email = email;
+		this.phonenumber = phonenumber;
+		this.gender = gender;
+		this.address = address;
+		this.checkindate = checkindate;
+		this.checkoutdate = checkoutdate;
+		this.roomrate = roomrate;
+		this.roomNo = roomNo;
+	}
+	public String getCheckindate() {
 		return checkindate;
 	}
 	public void setCheckindate(String checkindate) {

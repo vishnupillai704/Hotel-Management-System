@@ -8,5 +8,5 @@ import org.springframework.stereotype.Component;
 public interface BookingRepository extends  MongoRepository<Customer, Integer>  {
 
 	Customer findByName(String name);
-
+	void deleteById(Integer id);
 }
