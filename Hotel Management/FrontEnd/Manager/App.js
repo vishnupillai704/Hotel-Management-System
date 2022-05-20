@@ -13,16 +13,18 @@ import DeleteEmployees from './Components/DeleteEmployees';
 import Deleteinventories from './Components/Deleteinventories';
 import Loginbutton from './Components/Loginbutton'
 import PrivateRoutesManager from './Components/PrivateRoutesManager'
+import Footer from './Components/Footer';
 function App() {
   return (
+    <div>
     <Router>
   <div className='Container'>
-         <nav>
-         <Link to="/Home">Home</Link>
-           <Link to="/roomDetails">Room Details</Link>
-           <Link to="/AddRoom">Add Room</Link>
-           <Link to="/InventoryDetails">Inventory Details</Link>
-           <Link to="/AddInventory">Add Inventory</Link>
+         <nav className='Links' >
+         <Link className='Home'  to="/Home">Home</Link>
+           <Link className='roomDetails' to="/roomDetails">Room Details</Link>
+           <Link className='AddRoom' to="/AddRoom">Add Room</Link>
+           <Link className='InventoryDetails' to="/InventoryDetails">Inventory Details</Link>
+           <Link className='AddInventory' to="/AddInventory">Add Inventory</Link>
          </nav>
          <Routes>
          <Route path='/roomDetails' element={<PrivateRoutesManager component={RoomInformation}/>}/>
@@ -35,11 +37,16 @@ function App() {
          <Route path='/DeleteInventory' element={<PrivateRoutesManager component={Deleteinventories}/>}/>
          </Routes>
   </div>
-  <main>
-    <Loginbutton/>
+  <main className='Loginb' >
+    <Loginbutton />
     <LogoutButton/>
       </main>
   </Router>
+  <section className='MainFooter'>
+    <Footer/>
+  </section>
+  </div>
+
   )
 }
 export default App;
