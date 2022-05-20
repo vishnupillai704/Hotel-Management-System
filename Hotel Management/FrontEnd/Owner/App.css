@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+}
+
+.Links{
+  background-color: black;
+  margin: auto;
+  border:20px solid black;
+  height: 90px;
+}
+.Home{
+  font-family:'Pacifico', cursive;
+  font-size: 25px;
+  text-decoration: none;
+  position: relative;
+  right:70px;
+}
+.CustomerDetails{
+  font-family:'Pacifico', cursive;
+  font-size: 25px;
+  text-decoration: none;
+  position: relative;
+  right: 47px;
+}
+.RoomDetails{
+  font-family:'Pacifico', cursive;
+  font-size: 25px;
+  text-decoration: none;
+  position: relative;
+  right:29px;
+}
+.InventoryDetails{
+  font-family:'Pacifico', cursive;
+  font-size: 25px;
+  text-decoration: none;
+  position: relative;
+  right: 17px;
+}
+.DepartmentDetails{
+  font-family:'Pacifico', cursive;
+  font-size: 25px;
+  text-decoration: none;
+}
+.AddDepartment{
+  font-family:'Pacifico', cursive;
+  font-size: 25px;
+  text-decoration: none;
+  position: relative;
+  left: 20px;
+}
+.Signup{
+  position: relative;
+  left:1180px;
+  bottom: 63px;
+}
+.MainFooter{
+  position: relative;
+  top:250px;
+}

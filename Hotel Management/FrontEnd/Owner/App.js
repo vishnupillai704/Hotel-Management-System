@@ -11,17 +11,21 @@ import DeleteDepartment from './Components/DeleteDepartment';
 import LoginButton from './Components/LoginButton';
 import LogoutButton from './Components/LogOutButton';
 import PrivateRoute from './Components/PrivateRoute';
+import Home from './Components/Home';
+import Footer from './Components/Footer';
+import PaymentDetails from './Components/PaymentDetails';
 function App() {
   return (
+    <div>
     <Router>
     <div className="App">
-      <nav>
-        <Link to="/CustomerDetails">Customer Details</Link>
-        <Link to="/RoomDetails">Room Details</Link>
-        <Link to="/InventoryDetails">Inventory Details</Link>
-        <Link to="/DepartmentDetails">Department Details</Link>
-        <Link to="/AddDepartment">Add Department</Link>
-        
+      <nav className='Links' >
+        <Link className='Home' to="/Home">Home</Link>
+        <Link className='CustomerDetails' to="/CustomerDetails">Customer Details</Link>
+        <Link className='RoomDetails' to="/RoomDetails">Room Details</Link>
+        <Link className='InventoryDetails' to="/InventoryDetails">Inventory Details</Link>
+        <Link className='DepartmentDetails' to="/DepartmentDetails">Department Details</Link>
+        <Link className='AddDepartment' to="/AddDepartment">Add Department</Link>  
       </nav>
       <Routes>
        
@@ -30,17 +34,23 @@ function App() {
         <Route path='/InventoryDetails' element={<PrivateRoute component={InventoryDetails}/>} />
         <Route path='/DepartmentDetails' element={<PrivateRoute component={DepartmentDetails}/> }/>
         <Route path='/AddDepartment' element={<PrivateRoute component={AddDepartment}/>}/>
-         <Route path="/DeleteDepartment" element={<PrivateRoute component={DeleteDepartment}/>}/>         
+         <Route path="/DeleteDepartment" element={<PrivateRoute component={DeleteDepartment}/>}/>
+         <Route path="/Home" element={<Home/>}/>         
+         <Route path="/PaymentDetails" element={<PrivateRoute component={PaymentDetails}/>}/>
       </Routes>
     
      
       
     </div>
-    <main>
+    <main className='Signup'>
       <LoginButton/>
       <LogoutButton/>
     </main>
     </Router>
+    <section className='MainFooter'>
+      <Footer/>
+    </section>
+    </div>
   );
 }
 
