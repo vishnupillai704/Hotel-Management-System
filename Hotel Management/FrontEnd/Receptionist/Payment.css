@@ -1,0 +1,53 @@
+.Main{
+    text-align: center;
+    position: relative;
+    top:110px;
+    border: 5px solid black;
+    width: 600px;
+    height: 300px;
+    left: 270px;
+}
+.CustomerId{
+    font-family:'Pacifico', cursive; 
+    margin: 20px;
+    position: relative;
+    bottom: 47px;
+}
+.CustomerName{
+    font-family:'Pacifico', cursive; 
+    margin: 20px;
+    position: relative;
+    bottom: 45px;
+}
+.RoomRates{
+    font-family:'Pacifico', cursive; 
+    margin: 20px; 
+    position: relative;
+    bottom: 40px;
+}
+.MobileNo{
+    font-family:'Pacifico', cursive; 
+    margin: 20px; 
+    position:relative;
+    bottom: 40px;
+}
+.Status1{
+    font-family:'Pacifico', cursive; 
+    margin: 20px; 
+    position:relative;
+    bottom: 40px;
+}
+.titles{
+    font-family:'Pacifico', cursive; 
+    position: relative;
+    bottom:70px;    
+}
+.SavePayment{
+    position: relative;
+    top:40px;
+    right:100px;
+}
+.PlayButton{
+    position: relative;
+    left:46px;
+}

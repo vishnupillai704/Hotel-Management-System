@@ -13,6 +13,9 @@ import Home from './Component/Home';
 import LoginButton from './Component/LoginButton';
 import './App.css';
 import PrivateRoutes from './Component/PrivateRoutes';
+import RoomPhotos from './Component/RoomPhotos';
+import Footer from './Component/Footer';
+import Payment from './Component/Payment';
 function App() {
   return (
     <div >
@@ -23,22 +26,29 @@ function App() {
            <Link className='Customer' to="/CustomerDetails">Customer Details</Link>
            <Link className='AddCustomer' to="addCustomer">Add Customer</Link>
            <Link className='roomDetails' to="/roomDetails">Room Details</Link>
+           <Link className='paymentDetials' to='/payment'>Payment</Link>
+           <Link className='roomPhotos' to="/roomPhotos">Room Photos</Link>
          </nav>
                    <Routes>
                          <Route exact path='/home'  element={<Home/>}/>
                          <Route path='/CustomerDetails' element={<PrivateRoutes component={ListCustomer}/>}/>
                          <Route path='/addCustomer'    element={<PrivateRoutes component={Form}/>}/>        
                          <Route path='/deleteCustomer' element={<PrivateRoutes component={DeleteCustomer}/>}/>
-                         <Route path='/roomDetails' element={<PrivateRoutes component={Roomdetails}/>}/> 
+                         <Route path='/roomDetails' element={<PrivateRoutes component={Roomdetails}/>}/>
+                         <Route path='/roomPhotos' element={<RoomPhotos/>}/> 
                          <Route path='/deleteCheckOutCustomer' element={<PrivateRoutes component={DeleteCheckOutCustomer}/>}/>
                          <Route path='/SignOut' element={<SignOut/>}/>
+                         <Route path='/payment' element={<PrivateRoutes component={Payment}/>}/>
                    </Routes>    
        </div>
   </Router>
   <main className='SignIn'>
     < LoginButton className='Login' />
-     <LogOutButton/>
+     <LogOutButton />
     </main>
+    <section className='MainFooter'>
+      <Footer/>
+    </section>
   </div>
   );
 }

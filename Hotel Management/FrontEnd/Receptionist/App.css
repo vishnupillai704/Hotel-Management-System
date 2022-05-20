@@ -1,0 +1,59 @@
+.Link{
+  background-color: black;
+  margin: auto;
+  border: 20px solid black;
+  position: relative;
+  right: 63px;
+  width: 1240px;
+}
+.home{
+  font-family:'Pacifico', cursive;
+  font-size: 25px;
+  text-decoration: none;
+}
+.Customer{
+ font-family:'Pacifico', cursive;
+ font-size: 25px;
+ text-decoration: none;
+ position: relative;
+ left: 50px;
+ 
+}
+.AddCustomer{
+  font-family:'Pacifico', cursive;
+  font-size: 25px;
+  text-decoration: none;
+  position: relative;
+  left: 100px;
+}
+.roomDetails{
+  font-family:'Pacifico', cursive;
+  font-size: 25px;
+  text-decoration: none;
+  position: relative;
+  left: 150px;
+}
+.paymentDetials{
+  font-family:'Pacifico', cursive;
+  font-size: 25px;
+  text-decoration: none;
+  position: relative;
+  left:200px;
+}
+.SignIn{
+  position: relative;
+  left:1149px;
+  bottom:50px;
+  padding: auto;
+}
+.roomPhotos{
+  font-family:'Pacifico', cursive;
+  font-size: 25px;
+  position: relative;
+  left: 240px;
+  text-decoration: none;
+}
+.MainFooter{
+   position: relative;
+   top:250px;  
+}
