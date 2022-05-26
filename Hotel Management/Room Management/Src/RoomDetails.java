@@ -20,6 +20,21 @@ public class RoomDetails {
 	private Integer floorNo;
 	private Integer noOfbeds;
     private Integer roomRate;
+    
+    public RoomDetails() {
+    	
+    }
+    
+	public RoomDetails(Integer id, Integer roomNo, String roomType, Integer floorNo, Integer noOfbeds,
+			Integer roomRate) {
+		super();
+		this.id = id;
+		this.roomNo = roomNo;
+		this.roomType = roomType;
+		this.floorNo = floorNo;
+		this.noOfbeds = noOfbeds;
+		this.roomRate = roomRate;
+	}
 	public Integer getRoomRate() {
 		return roomRate;
 	}

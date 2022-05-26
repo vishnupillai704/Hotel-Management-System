@@ -19,21 +19,19 @@ import io.swagger.annotations.ApiOperation;
 
 
 
-@CrossOrigin(origins ={"http://localhost:3001","http://localhost:3000","http://localhost:3002"})
+@CrossOrigin(origins ={"http://localhost:3001","http://localhost:3000","http://localhost:3002","http://localhost:3001/roomDetails","http://localhost:3001/AddRoom"})
 @RestController
 @RequestMapping("/RoomManagement")
 public class RoomController {
 	@Autowired
-	private RoomRepository roomrepository;
-	@Autowired
-	private SequenceGeneratorService service;
+	private RoomService service;
 
 	@GetMapping("/RoomAll")
 	@ApiOperation(value="Finds all Room details",
 	 notes="will get you all the details of room in hotel",
 	 response=RoomDetails.class)
-	public List<RoomDetails>FindALl(){
-		return roomrepository.findAll();
+	public List<RoomDetails>FindAll(){
+		return service.FindAll();
 	}
 	
 	@PostMapping("/load")
@@ -41,17 +39,16 @@ public class RoomController {
 	 notes="will post the details of room into database",
 	 response=RoomDetails.class)
 	public RoomDetails load(@RequestBody RoomDetails ord) {
-		ord.setId(service.getSequenceNumber(ord.SEQUENCE_NAME));
-         return roomrepository.save(ord);
+		return service.load(ord);
 	}
 	
 	@PutMapping("/Update")
-	public void update(@RequestBody RoomDetails ord) {
-	     roomrepository.save(ord);
+	public RoomDetails update(@RequestBody RoomDetails ord) {
+	     return service.update(ord);
 	}
 	
 	@DeleteMapping("/delete/{id}")
 	public void delete(@PathVariable Integer id) {
-	     roomrepository.deleteById(id);
+	     service.delete(id);
 	}
 }
