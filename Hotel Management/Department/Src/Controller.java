@@ -21,21 +21,19 @@ import io.swagger.annotations.ApiOperation;
 
 
 
-@CrossOrigin(origins ="http://localhost:3002")
+@CrossOrigin(origins ={"http://localhost:3002","http://localhost:3002/AddDepartment"})
 @RestController
 @RequestMapping("/DepartmentDetails")
 public class Controller {
 	@Autowired
-	private  DepartmentRepository departmentrepository;
-	@Autowired
-	private SequenceGeneratorService service;
+	private DepartmentService service;
 
 	@GetMapping("/DepartmentAll")
 	@ApiOperation(value="Finds all Department details",
 	 notes="will get you all the details of Departments in hotel",
 	 response=DepartmentDetails.class)
-	public List<DepartmentDetails>FindALl(){
-		return departmentrepository.findAll();
+	public List<DepartmentDetails>FindAll(){
+		return service.FindAll();
 	}
 
 	@PostMapping("/load")
@@ -43,24 +41,22 @@ public class Controller {
 	 notes="Post the details of Departments into DataBase",
 	 response=DepartmentDetails.class)
 	public DepartmentDetails load(@RequestBody DepartmentDetails ord) {
-		ord.setId(service.getSequenceNumber(ord.SEQUENCE_NAME));
-         return departmentrepository.save(ord);
-
+	   return service.load(ord);
 	}
 	
 	@PutMapping("/Update")
 	@ApiOperation(value="Update Department details",
 	 notes="Update the details of Departments into DataBase",
 	 response=DepartmentDetails.class)
-	public void update(@RequestBody DepartmentDetails ord) {
-	     departmentrepository.save(ord);
+	public DepartmentDetails update(@RequestBody DepartmentDetails ord) {
+	     return service.update(ord);
 	}
 	@DeleteMapping("/delete/{id}")
 	@ApiOperation(value="Delete Department details",
 	 notes="Delete the details of Departments into DataBase",
 	 response=DepartmentDetails.class)
 	public void delete(@PathVariable Integer id) {
-	     departmentrepository.deleteById(id);
+	     service.delete(id);
 	}
 	
 

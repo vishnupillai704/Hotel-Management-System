@@ -18,6 +18,17 @@ public class DepartmentDetails {
 	private String departmentName;
 	private Integer totalEmployees;
 	private Long totalSalary;
+	
+	public DepartmentDetails() {
+		
+	}
+	public DepartmentDetails(Integer id, String departmentName, Integer totalEmployees, Long totalSalary) {
+		super();
+		this.id = id;
+		this.departmentName = departmentName;
+		this.totalEmployees = totalEmployees;
+		this.totalSalary = totalSalary;
+	}
 	public Integer getId() {
 		return id;
 	}
