@@ -20,14 +20,14 @@ import io.swagger.annotations.ApiOperation;
 
 
 
-@CrossOrigin(origins ={"http://localhost:3000","http://localhost:3002","http://localhost:3000/addCustomer"})
+@CrossOrigin(origins ={"http://localhost:3000","http://localhost:3002","http://localhost:3000/addCustomer","http://localhost:3000/CustomerDetails"})
 @RestController
 @RequestMapping("/Booking")
 public class Controller {
 	@Autowired
-    private BookingRepository bookingrepository;     
-	@Autowired
 	private SequenceGeneratorService service;
+	@Autowired
+	private CustomerService customerservice;
 	@Autowired
 	RabbitMQSender rabbitMQSender;
  
@@ -38,7 +38,7 @@ public class Controller {
 	 notes="will get you all the details of customer in hotel",
 	 response=Customer.class)
 	public List<Customer>findAll(){
-		return bookingrepository.findAll();
+		return customerservice.findAll();
 	}
 	
 	@GetMapping("/payment")
@@ -61,9 +61,7 @@ public class Controller {
 			response=Customer.class)
     @PostMapping("/load")
 	public Customer load(@RequestBody Customer ord) {
-    ord.setId(service.getSequenceNumber(ord.SEQUENCE_NAME));		
-	bookingrepository.save(ord);
-	return bookingrepository.findByName(ord.getName());
+       return customerservice.load(ord);
 	}
 	
 	
@@ -72,7 +70,7 @@ public class Controller {
 			response=Customer.class)
     @DeleteMapping("/delete/{id}")
 	public void delete(@PathVariable Integer id) {
-	     bookingrepository.deleteById(id);
+	     customerservice.delete(id);
 	}
 	
 	
