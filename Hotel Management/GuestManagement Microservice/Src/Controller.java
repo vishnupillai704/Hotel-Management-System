@@ -23,11 +23,8 @@ import io.swagger.annotations.ApiOperation;
 @RestController
 @RequestMapping("/Update")
 public class Controller {
-    
-	@Autowired
-	 private UpdateRepository updaterepository; 
-	@Autowired
-	private SequenceGeneratorService service;
+    @Autowired
+     private CustomerUpdateService service;
 	
 	
 	@ApiOperation(value="Finds all Updated Customer details",
@@ -35,16 +32,15 @@ public class Controller {
 	 response=CustomerUpdate.class)
 	@GetMapping("/allupdate")
 	public List<CustomerUpdate>findAll(){
-		return updaterepository.findAll();
+		return service.findAll();
 	}
 	
 	@ApiOperation(value="post the updated details to database",
 			 notes="will send the updated details of customer to database",
 			 response=CustomerUpdate.class)
 	@PutMapping("/update")
-	public void update(@RequestBody CustomerUpdate ord) {
-		ord.setiD(service.getSequenceNumber(ord.SEQUENCE_NAME));
-	     updaterepository.save(ord);
+	public CustomerUpdate update(@RequestBody CustomerUpdate ord) {
+		return service.update(ord);
 	}
 	
 	@ApiOperation(value="Delete updated Customer details by id",
@@ -52,7 +48,7 @@ public class Controller {
 			 response=CustomerUpdate.class)
     @DeleteMapping("/delete/{id}")
 	public void delete(@PathVariable Integer id) {
-	     updaterepository.deleteById(id);
+	     service.delete(id);
 	}
 	
 }

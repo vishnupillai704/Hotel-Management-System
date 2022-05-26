@@ -20,7 +20,21 @@ public class CustomerUpdate {
     private String updatedcheckoutdate;
     private Integer updatedroomrate; 
     private Integer updatedroomNo;
-	
+	 
+    public CustomerUpdate() {
+    	
+    }
+    
+	public CustomerUpdate(Integer iD, String updatedname, String updatedstatus, String updatedcheckoutdate,
+			Integer updatedroomrate, Integer updatedroomNo) {
+		super();
+		this.iD = iD;
+		this.updatedname = updatedname;
+		this.updatedstatus = updatedstatus;
+		this.updatedcheckoutdate = updatedcheckoutdate;
+		this.updatedroomrate = updatedroomrate;
+		this.updatedroomNo = updatedroomNo;
+	}
 	public Integer getiD() {
 		return iD;
 	}

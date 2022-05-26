@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public interface UpdateRepository  extends  MongoRepository<CustomerUpdate, Integer> {
 
-	void deleteById(Long employeeid);
+	void deleteById(Integer id);
 
 	
 }
