@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection="InventoryDetails")
 public class InventoryDetails {
 	@Id
-	private Integer id;
+	private Integer iD;
 	private Integer day;
 	private String foods;
 	private String drinks;
@@ -20,11 +20,12 @@ public class InventoryDetails {
 	public void setTotalCost(Long totalCost) {
 		this.totalCost = totalCost;
 	}
-	public Integer getId() {
-		return id;
+
+	public Integer getiD() {
+		return iD;
 	}
-	public void setId(Integer id) {
-		this.id = id;
+	public void setiD(Integer iD) {
+		this.iD = iD;
 	}
 	public Integer getDay() {
 		return day;

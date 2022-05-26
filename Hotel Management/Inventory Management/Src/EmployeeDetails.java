@@ -21,6 +21,21 @@ public class EmployeeDetails {
 	private Integer employeeAge;
 	private String occupation;
 	private String employeeEmail;
+	public EmployeeDetails() {
+		
+	}
+	
+	public EmployeeDetails(Integer id, String employeeName, String employeeAddress, Long employeeSalary,
+			Integer employeeAge, String occupation, String employeeEmail) {
+		super();
+		this.id = id;
+		this.employeeName = employeeName;
+		this.employeeAddress = employeeAddress;
+		this.employeeSalary = employeeSalary;
+		this.employeeAge = employeeAge;
+		this.occupation = occupation;
+		this.employeeEmail = employeeEmail;
+	}
 	public Integer getId() {
 		return id;
 	}
