@@ -1,0 +1,73 @@
+.containerMain{
+   
+    border: 15px solid black;
+    width: 500px;
+    position: relative;
+    top:20px;
+    left:350px;
+}
+.EmployeeActions{
+    position: relative;
+    top:10px;
+    }
+    .id{
+        font-family:Arial, Helvetica, sans-serif;
+        position: relative;
+        margin: 20px; 
+        left:108px;
+        
+    }
+    .employeeName{
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 20px;
+        
+    }
+    .employeeAddress{
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 20px;
+        position: relative;
+        right: 12px;
+    }
+    .employeeSalary{
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 20px;
+        position: relative;
+        right:5px;
+    }
+    .employeeAge{
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 20px;
+        position: relative;
+        left:14px;
+    }
+    .occupation{
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 20px;
+        position: relative;
+        left: 34px;
+    }
+    .employeeEmail{
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 20px;
+        position: relative;
+
+    }
+
+    .UpdateEmployee{
+        position: relative;
+        bottom: 75px;
+        right:85px;
+    }
+    .DeleteEmployee{
+        position: relative;
+        left: 487px;
+        bottom: 100px;
+    }
+    .saveEmployee{
+        position: relative;
+        left:199px;
+    }
+    .SubmitEmployee{
+        position: relative;
+        left:210px;
+    }

@@ -1,99 +1,70 @@
-.container{
-    text-align: center;
-    border: 5px solid black;
-    width: 300px;
+.containerInventory{
+    
+    border: 15px solid black;
+    width: 500px;
     position: relative;
-    top:20px;
+    top:60px;
+    left:380px;
 }
-.EmployeeActions{
-position: relative;
-bottom: 8px;
-}
-.id{
-    font-family:'Pacifico', cursive;
-    margin: 20px;  
-}
-.employeeName{
-    font-family:'Pacifico', cursive;
-    margin: 20px;
-}
-.employeeAddress{
-    font-family:'Pacifico', cursive;
-    margin: 20px;
-}
-.employeeSalary{
-    font-family:'Pacifico', cursive;
-    margin: 20px;
-}
-.employeeAge{
-    font-family:'Pacifico', cursive;
-    margin: 20px;
-}
-.occupation{
-    font-family:'Pacifico', cursive;
-    margin: 20px;
-}
-.employeeEmail{
-    font-family:'Pacifico', cursive;
-    margin: 20px;
-}
-.saveEmployee{
-    position:relative;
-    right: 275px;
-    bottom: 40px;
-}
-.UpdateEmployee{
-    position: relative;
-    bottom: 24px;
-}
-.DeleteEmployee{
-    position: relative;
-    left: 283px;
-    bottom: 97px;
-}
+
 .iD{
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px;
+    position: relative;
+    left:100px;
 }
 .day{
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px;
+    position: relative;
+    left:80px;
 }
 .foods{
-    font-family:'Pacifico', cursive;
-    margin: 20px; 
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;
+    position: relative;
+    left:70px;
 }
 .drinks{
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px; 
+    position: relative;
+    left:65px;
 }
 .linen{
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px; 
+    position: relative;
+    left:72px;
 } 
 .cleaningProducts{
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px; 
+    position: relative;
+    right:20px;
 }
 .totalcost{
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px;  
+    position: relative;
+    left:35px;
 }
 .InventoryActions{
     position: relative;
-    bottom: 5px;
+    top:5px;
 }
 .saveInventory{
     position: relative;
-    right: 275px;
+    right: 65px;
     bottom: 43px;
 }
 .UpdateInventory{
     position: relative;
     bottom: 24px;
+    left:190px;
 }
 .DeleteInventory{
     position: relative;
-    left:283px;
-    bottom:100px;
+    left:487px;
+    bottom:95px;
 }

@@ -1,6 +1,5 @@
 .container1{
-    text-align: center;
-    border: 5px solid black;
+    border: 15px solid black;
     width: 480px;
     height: 340px;
     position: relative;
@@ -9,28 +8,34 @@
 }
 
 .Id{
-    font-family:'Pacifico', cursive;
+    position: relative;
     margin: 20px;
+    left: 100px;
 }
 .RoomNo{
-    font-family:'Pacifico', cursive;
-    margin: 20px; 
+    position: relative;
+    margin: 20px;
+    left:45px; 
 }
 .RoomType{
-    font-family:'Pacifico', cursive;
+   position: relative;
     margin: 20px; 
+    left:34px;
 }
 .FloorNo{
-    font-family:'Pacifico', cursive;
-    margin: 20px; 
+    position: relative;
+    margin: 20px;
+    left:53px; 
 }
 .NoOFbeds{
-    font-family:'Pacifico', cursive;
-    margin: 20px;   
+    position: relative;
+    margin: 20px;
+    left:30px;   
 }
 .RoomRate{
-    font-family:'Pacifico', cursive;
+   position: relative;
     margin: 20px;
+    left:34px;
 }
 .Action{
     position: relative;
@@ -38,17 +43,23 @@
 }
 .saveRoom{
     position: relative;
-    right:265px;
-    bottom: 40px;
+    right:70px;
+    bottom: 45px;
 
 }
 .DeleteRoom{
     position: relative;
-    left:272px;
-    bottom: 96px;
+    left:467px;
+    bottom: 104px;
     
 }
 .UpdateRoom{
     position: relative;
     bottom: 34px;
+    left:200px;
+}
+.SubmitForm{
+    position: relative;
+    right:64px;
+    bottom: 24px;
 }

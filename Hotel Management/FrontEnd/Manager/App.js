@@ -14,6 +14,7 @@ import Deleteinventories from './Components/Deleteinventories';
 import Loginbutton from './Components/Loginbutton'
 import PrivateRoutesManager from './Components/PrivateRoutesManager'
 import Footer from './Components/Footer';
+import EmployeeAddition from './Components/EmployeeAddition';
 function App() {
   return (
     <div>
@@ -23,8 +24,9 @@ function App() {
          <Link className='Home'  to="/Home">Home</Link>
            <Link className='roomDetails' to="/roomDetails">Room Details</Link>
            <Link className='AddRoom' to="/AddRoom">Add Room</Link>
-           <Link className='InventoryDetails' to="/InventoryDetails">Inventory Details</Link>
+           <Link className='InventoryDetails' to="/InventoryDetails"> Details</Link>
            <Link className='AddInventory' to="/AddInventory">Add Inventory</Link>
+           <Link className='AddEmployee' to="/AddEmployee">Add Employee</Link>
          </nav>
          <Routes>
          <Route path='/roomDetails' element={<PrivateRoutesManager component={RoomInformation}/>}/>
@@ -35,6 +37,7 @@ function App() {
          <Route path='/DeleteRoom' element={<PrivateRoutesManager component={DeleteRooms}/>}/>
          <Route path='/DeleteEmployee' element={<PrivateRoutesManager component={DeleteEmployees}/>}/>     
          <Route path='/DeleteInventory' element={<PrivateRoutesManager component={Deleteinventories}/>}/>
+         <Route path="/AddEmployee" element={<PrivateRoutesManager component={EmployeeAddition}/>}/>
          </Routes>
   </div>
   <main className='Loginb' >

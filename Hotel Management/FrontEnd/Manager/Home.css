@@ -1,5 +1,5 @@
+
 .welcome{
-    font-family:'Pacifico', cursive;
     font-size: 45px;
     text-align: center;
     color: blue;
@@ -8,11 +8,23 @@
     
 }
 .continue{
-    font-family:'Pacifico', cursive;
+    
     font-size: 45px;
     text-align: center;
     position: relative;
-    top: 45px;
+    top: 75px;
     color: green;
     
+}
+.hotelfrontMain{
+    position :relative;
+    top:110px;
+    left:245px;
+}
+.luxury{
+    position:relative;
+    top:170px;
+    left:115px;
+    color: black;
+    border: 15px solid blue;
 }
