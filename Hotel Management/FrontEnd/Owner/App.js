@@ -23,9 +23,10 @@ function App() {
         <Link className='Home' to="/Home">Home</Link>
         <Link className='CustomerDetails' to="/CustomerDetails">Customer Details</Link>
         <Link className='RoomDetails' to="/RoomDetails">Room Details</Link>
-        <Link className='InventoryDetails' to="/InventoryDetails">Inventory Details</Link>
+        <Link className='InventoryDetails' to="/InventoryDetails">Employee Details</Link>
         <Link className='DepartmentDetails' to="/DepartmentDetails">Department Details</Link>
-        <Link className='AddDepartment' to="/AddDepartment">Add Department</Link>  
+        <Link className='AddDepartment' to="/AddDepartment">Add Department</Link> 
+        <Link className='payment' to="/payment">Payment</Link>
       </nav>
       <Routes>
        
@@ -34,9 +35,9 @@ function App() {
         <Route path='/InventoryDetails' element={<PrivateRoute component={InventoryDetails}/>} />
         <Route path='/DepartmentDetails' element={<PrivateRoute component={DepartmentDetails}/> }/>
         <Route path='/AddDepartment' element={<PrivateRoute component={AddDepartment}/>}/>
-         <Route path="/DeleteDepartment" element={<PrivateRoute component={DeleteDepartment}/>}/>
-         <Route path="/Home" element={<Home/>}/>         
-         <Route path="/PaymentDetails" element={<PrivateRoute component={PaymentDetails}/>}/>
+        <Route path="/DeleteDepartment" element={<PrivateRoute component={DeleteDepartment}/>}/>
+        <Route path="/Home" element={<Home/>}/>         
+        <Route path="/payment" element={<PrivateRoute component={PaymentDetails}/>}/>
       </Routes>
     
      

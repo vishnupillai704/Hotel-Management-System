@@ -1,42 +1,49 @@
-.container{
-    border: 5px solid black;
+.containerInventory{
+    border: 15px solid black;
     position: relative;
     top:80px;
-    width: 400px;
+    left:370px;
+    width: 500px;
     height: 300px;
 }
 .id{
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px;
 }
 .departmentName{
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px;
+    position: relative;
+    right:60px;
 }
 .totalEmployees{
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px; 
+    position: relative;
+    right:55px;
 }
 .totalSalary{
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px; 
+    position: relative;
+    right: 35px;
 }
 .DepartmentActions{
     position: relative;
-    top:20px;
+    top:35px;
 }
 .saveDepartment{
 position: relative;
-bottom: 5px;
+bottom: 15px;
 }
 .DeleteDepartment{
     position: relative;
-    left:236px;
+    left:283px;
     bottom: 107px;
 }
 .UpdateDepartment{
     position: relative;
-    right:240px;
-    bottom: 77px;
+    right:285px;
+    bottom: 85px;
 
 }

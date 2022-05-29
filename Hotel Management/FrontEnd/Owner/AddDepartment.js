@@ -31,23 +31,23 @@ function AddDepartment(){
       }
 
     return(
-        <div className="container">
-            <form>
+        <div className="containerInventory">
+            <form onSubmit={save} >
             <div className="id" ><label>Id:</label>
-             <input type="number" value={id} onChange={(e)=>setid(e.target.value)} /></div>
+             <input type="number" value={id} placeholder='Only for Update' onChange={(e)=>setid(e.target.value)} /></div>
              
              <div className="departmentName" ><label>Department Name:</label>
-             <input type="text" value={departmentName} onChange={(e)=>setdepartmentName(e.target.value)} /></div>
+             <input type="text" value={departmentName} onChange={(e)=>setdepartmentName(e.target.value)}  required /></div>
 
              <div className="totalEmployees" ><label>Total Employees :</label>
-             <input type="number" value={totalEmployees} onChange={(e)=>settotalEmployees(e.target.value)} /></div>
+             <input type="number" value={totalEmployees} onChange={(e)=>settotalEmployees(e.target.value)} required /></div>
 
              <div className="totalSalary" ><label>Total Salary:</label>
-             <input type="number" value={totalSalary} onChange={(e)=>settotalSalary(e.target.value)} /></div>
-
+             <input type="number" value={totalSalary} onChange={(e)=>settotalSalary(e.target.value)} required /></div>
+              
+              <input type="submit" value="save" className="saveDepartment" />
             </form>
             <main className="DepartmentActions">
-             <div className="saveDepartment"> <button onClick={save} >Save</button></div>
              <div className="UpdateDepartment"> <button onClick={Update} >Update</button></div>
              <div className="DeleteDepartment"> <button onClick={Delete} >Delete</button></div>
             </main>

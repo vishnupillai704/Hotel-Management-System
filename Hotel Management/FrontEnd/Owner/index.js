@@ -10,8 +10,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Auth0Provider
-      domain='dev-smtsmydc.us.auth0.com'
-      clientId='5IdFkqUgDNl9eVIGQscUkO2IWHBMMYNf'
+      domain='dev-w7c-3-s7.us.auth0.com'
+      clientId='ALpf5hTRQin1LSLj5Nyd5U5mLgSsvIY6'
       redirectUri={window.location.origin}>
     <App />
     </Auth0Provider>

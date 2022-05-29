@@ -52,6 +52,7 @@ class InventoryDetails extends React.Component{
 
                         </tbody>
                     </table>
+                    <h2 className='text-center'>Inventory List</h2>
                     <table className='table table-striped table-bordered'>
                         <thead>
                             <tr>
