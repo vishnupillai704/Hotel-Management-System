@@ -1,53 +1,54 @@
 .Main{
-    text-align: center;
+  
     position: relative;
-    top:110px;
-    border: 5px solid black;
+    bottom: 150px;
+    border: 10px solid black;
     width: 600px;
     height: 300px;
     left: 270px;
 }
 .CustomerId{
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px;
     position: relative;
     bottom: 47px;
+    left:105px;
 }
 .CustomerName{
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px;
     position: relative;
     bottom: 45px;
+    left: 82px;
+
 }
 .RoomRates{
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px; 
     position: relative;
     bottom: 40px;
+    left:142px;
 }
-.MobileNo{
-    font-family:'Pacifico', cursive; 
-    margin: 20px; 
-    position:relative;
-    bottom: 40px;
-}
+
 .Status1{
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px; 
     position:relative;
     bottom: 40px;
+    left:142px;
 }
 .titles{
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
-    bottom:70px;    
+    bottom:70px;
+    left:105px;    
 }
 .SavePayment{
     position: relative;
     top:40px;
-    right:100px;
+    left: 80px;
 }
 .PlayButton{
     position: relative;
-    left:46px;
+  left:220px;
 }

@@ -6,37 +6,37 @@
 }
 .HeadingHotel{
     position: relative;
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif; 
     bottom:40px;
     left:450px;
 }
 .Legal{
     position: relative;
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     top:40px;
     right:69px;
 }
 .Privacy{
     position: relative;
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     top:40px;
     right: 40px;
 }
 .Copyright{
     position: relative;
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     left:195px;
 
 }
 .CustomerCareEmail{
     position: relative;
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     bottom: 40px;
     left:180px;
 }
 .Care{
     position: relative;
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .FooterLogo{
     position: relative;

@@ -1,5 +1,5 @@
 import {useNavigate} from "react-router-dom";
-import React,{useState} from "react";   
+import React,{useEffect, useState} from "react";   
 import CustomerService from "../services/CustomerService";
 import './Payment.css'
 import GooglePayButton from '@google-pay/button-react';
@@ -9,7 +9,19 @@ function Payment(){
   const[CustomerName,setCustomerName]=useState('');
   const[Amount,setAmount]=useState('');
   const[Status,setStatus]=useState('');
+  const[Customers,setCustomers]=useState([]);
+   
+useEffect(()=>{
+  getCustomer()
+},[])
 
+  const getCustomer=()=>{
+    CustomerService.getCustomer().then((response)=>{
+        setCustomers(response.data);
+        console.log(response.data);
+    });
+  };
+  
   const save=(e)=>{
     e.preventDefault();
     let Customer=CustomerId
@@ -20,8 +32,32 @@ function Payment(){
      
     CustomerService.paymentDetails(Customer,CustomerNam,Amoun,Statu).then(res =>{navigate("/CustomerDetails")})
 }
+
    return(
-       <div className="Main">
+         <div>
+         <div className="MainContainer" >
+         <h2 className='Heading'>Check-In Guest </h2>
+         <table className="table-bordered">
+                        <thead>
+                            <tr>
+                              <th>ID</th>
+                              <th>Name</th>
+                              <th>Amount</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                                {Customers.map(customer=>
+                                  <tr key={customer.id}>
+                                    <td>{customer.id}</td>
+                                    <td>{customer.name}</td>
+                                    <td>{customer.roomrate}</td>
+                                  </tr>
+                                  )}
+                              </tbody>
+                              </table>
+
+         </div>
+           <div className="Main">
                  <div className="titles"><h1>Payment Information</h1></div>
        <form>
        <div className="CustomerId"> <label>CustomerId :</label> 
@@ -62,13 +98,13 @@ function Payment(){
               ],
               merchantInfo: {
                 merchantId: "12345678901234567890",
-                merchantName: "Demo Merchant",
+                merchantName: "Hotel Owner",
               },
               transactionInfo: {
                 totalPriceStatus: "FINAL",
                 totalPriceLabel: "Total",
                 totalPrice: Amount,
-                currencyCode: "USD",
+                currencyCode: "INR",
                 countryCode: "US",
               },
               shippingAddressRequired: true,
@@ -90,6 +126,7 @@ function Payment(){
           <button  className="SavePayment" onClick={save} >Save</button>
       </main>
 
+       </div>
        </div>
    )
 

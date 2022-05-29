@@ -16,6 +16,7 @@ import PrivateRoutes from './Component/PrivateRoutes';
 import RoomPhotos from './Component/RoomPhotos';
 import Footer from './Component/Footer';
 import Payment from './Component/Payment';
+import hotelMain from './hotelMain.jpg';
 function App() {
   return (
     <div >

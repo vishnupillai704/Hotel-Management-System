@@ -1,102 +1,205 @@
+
+
 .Addcustomer{
-    border: 5px solid black;
-    text-align: center;
+    border: 10px solid black;
     margin: 50px;
     width: 500px;
     position: relative;
     top:60px;
 }
 .UpdateCustomer{
-    border: 5px solid black;
+    border: 10px solid black;
     width: 400px;
-    text-align: center;
     position: relative;
     left:670px;
     bottom: 678px;
     height: 260px;
 }
 .Id{
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px;
 }
 .Name{
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px;
+    position: relative;
+    left:90px;
 }
 .Adults{
-    font-family:'Pacifico', cursive;
-    margin: 20px;   
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;  
+    position: relative;
+    left:44px; 
 }
 .Status{
-    font-family:'Pacifico', cursive;
-    margin: 20px;  
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;
+    position: relative;
+    left:84px;  
 }
 .Noofnights{
-    font-family:'Pacifico', cursive;
-    margin: 20px;    
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px; 
+    position: relative;
+    left:40px;   
 }
 .Email{
-    font-family:'Pacifico', cursive;
-    margin: 20px;    
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;
+    position: relative;
+    left:88px;    
 }
 .phonenumber{
-    font-family:'Pacifico', cursive;
-    margin: 20px;     
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;
+    position: relative;
+    left:30px;     
 }
 .Gender{
-    font-family:'Pacifico', cursive;
-    margin: 20px;    
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;
+    position: relative;
+    left:77px;    
 }
 .Address{
-    font-family:'Pacifico', cursive;
-    margin: 20px;  
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;
+    position: relative;
+    left:69px;  
 }
 .Checkin{
-    font-family:'Pacifico', cursive;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 20px;  
+    position: relative;
+    left:25px;
 }
 .Checkout{
-    font-family:'Pacifico', cursive;
-    margin: 20px;     
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;   
+    position: relative;
+    left:15px;  
 }
 .RoomRate{
-       font-family:'Pacifico', cursive;
-    margin: 20px;   
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;
+    position: relative;
+    left:45px;   
+}
+.RoomNo{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;
+    position: relative;
+    left:57px;
 }
 
 .Delete{
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
-    left: 320px;
+    left: 555px;
+    bottom: 78px;
 }
 
 .delete{
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     left:930px;
-    bottom: 700px;
+    bottom: 677px;
 }
 .updatedDetails{
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     left:790px;
     bottom: 670px;
 }
 .saveDetails{
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     top: 30px;
     left:198px;
 }
 .UpdateGuest{
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     left:750px;
     top:50px;
 }
 .AddGuest{
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     left:100px;
     top:99px;  
+}
+.NameC{
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    left:35px;
+    margin: 20px;
+}
+.StatusC{
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    left:30px;
+    margin: 20px;  
+}
+.CheckoutC{
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    left:30px;
+    margin: 20px; 
+}
+.RoomNoC{
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    left:7px;
+    margin: 20px; 
+}
+.submitForm{
+    position: relative;
+    top: 35px;
+    left:100px;
+}
+.SubmitCustomer{
+    position: relative;
+    bottom: 5px;;
+    left:200px;
+}
+.Save{
+    position: relative;
+    bottom: 20px;
+}
+
+.photo{
+    position: relative;
+    left: 190px;
+}
+.front1{
+    border: 15px solid black;
+    position: relative;
+    bottom: 150px;
+    left:50px;
+}
+.front{
+    border: 15px solid black;
+    position: relative;
+    left:150px;
+    bottom: 150px;
+}
+.Quote{
+    position: relative;
+    left:40px;
+    bottom: 30px;
+    border: 15px solid black;
+}
+.UPDATE{
+    font-family:Arial, Helvetica, sans-serif;
+  
+    position: relative;
+    left:270px;
+    bottom: 15px;
+}
+.ID{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px;
+    position: relative;
+    left:124px;
 }

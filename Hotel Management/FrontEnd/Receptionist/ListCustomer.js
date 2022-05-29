@@ -29,7 +29,7 @@ class ListCustomer extends React.Component {
     render() {
         return (
             <div className='ListOfCustomer'>
-                <h2 className='text-center'>Check-In Guest List</h2>
+                <h2 className='text-center'>Check-In Guests</h2>
                 <div className='row'>
                     
                     <table className='table table-striped table-bordered'>
@@ -76,7 +76,7 @@ class ListCustomer extends React.Component {
                      </div>
 
                     <div className='checkout'>
-                       <div><h2 className='text-center'>Check-Out GuestList</h2></div>
+                       <div><h2 className='text-center'>Check-Out Guests</h2></div>
                     <table className='table table-striped table-bordered'>
                         <thead>
                             <tr>

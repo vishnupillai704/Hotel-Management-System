@@ -1,26 +1,42 @@
+
 .Hotel{
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     top: 20px;
     text-align: center;
     color: blue;
 }
 .Login{
-    font-family:'Pacifico', cursive; 
+    font-family:Arial, Helvetica, sans-serif;
     position: relative;
     color: green;
-    top: 30px;
+    top: 50px;
     text-align: center;
 }
 .hotelimg{
     position: relative;
-    top: 75px;
-    left:20px;
-    border: 5px solid black;
+    top: 240px;
+    left:110px;
+    border: 10px solid black;
 }
 .hotelimg2{
     position: relative;
-    top: 75px;
-    left:180px;
-    border: 5px solid black;
+    top: 240px;
+    left:220px;
+    border: 10px solid black;
+}
+
+.hotelfront1{
+    border:15px solid black;
+    position: relative;
+    top:160px;
+    left:110px;
+}
+.luxury{
+    border: 10px solid black;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    top:99px;
+    left:55px;
+    color:brown
 }
